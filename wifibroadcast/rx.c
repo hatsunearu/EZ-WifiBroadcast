@@ -84,7 +84,7 @@ usage(void)
 			"-a <ip address> ip address of the dest host where we will send rssi values to\n"
 			"-c <port> port of the dest host where we will send rssi values to\n"
 	    "Example:\n"
-	    "  iwconfig wlan0 down\n"
+	    "  ifconfig wlan0 down\n"
 	    "  iw dev wlan0 set monitor otherbss fcsfail\n"
 	    "  ifconfig wlan0 up\n"
 			"  iwconfig wlan0 channel 13\n"

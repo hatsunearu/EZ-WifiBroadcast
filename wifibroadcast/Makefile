@@ -10,7 +10,7 @@ all: rx joystick joystick_receive tx tx_alternate tx_duplicate rx_status_test
 	gcc -c -o $@ $< $(CPPFLAGS)
 
 
-rx: rx.o rx_lib.o lib.o radiotap.o fec.o
+rx: rx.o lib.o radiotap.o fec.o
 	gcc -o $@ $^ $(LDFLAGS)
 
 joystick: send_joystick_command.o tx_lib.o lib.o fec.o
